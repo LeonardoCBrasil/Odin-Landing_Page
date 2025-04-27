@@ -1,11 +1,78 @@
 :root{
-    --font: "Roboto";
-    --colour_Hero: #F9FAF8;
-    --colour-Secondary_text: #E5E7EB;
-    --background-color-hero_footer: #1F2937;
-    --background-color-Quote_Section: #E5E7EB;
-    --button-color: #3882f6;
+    --font: "Roboto", sans-serif;
+    --color_white-font: #F9FAF8; 
+    --color_gray-font: #E5E7EB;
+
+
+    --background-color-slate-blue: #1F2937;
+    --backgrond-color-gray: #E5E7EB;
+
+
+    --button-color: #3882F6;
 }
+
+/* Global settings */
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ body, html{
+    display: block;
+    height: 100%;
+
+    font-family: var(--font);
+ }
+ 
+ a {
+    text-decoration: none;
+ }
+
+ .button-sign-up{
+    border-radius: 7%;
+    padding: 3px 19px;
+    margin: 5px;
+
+    font-weight: 800;
+    border: 1px solid var(--button-color);
+    color: var(--color_white-font);
+    background-color: var(--button-color);
+ }
+
+
+/* Header & Hero */
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--background-color-slate-blue);
+    padding: 12px;
+}
+
+.header-logo{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color_white-font);
+}
+
+.header-links{
+    display: flex;
+    gap: 10px;
+}
+
+.header-links > div a{
+    font-size: smaller;
+    color: var(--color_white-font);
+}
+
+/* Hero */
+.hero{
+    display: flex;
+}
+
+
 
 
 
